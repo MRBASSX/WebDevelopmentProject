@@ -1,29 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/mystyle.css">
+    <style>
+        .MyNav {
+            height: 80px;
+            background-color: black;
+            font-size: 15px;
+            color: white;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            column-gap: 30px;
+
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+        }
+
+        .MyNav ul li a {
+            color: white;
+        }
+
+        .MyNav ul li {
+            list-style: none;
+        }
+
+        #start{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid gray;
+            border-radius: 1rem;
+            padding: 10px;
+            /* padding-top: 20px;
+            padding-bottom: 20px; */
+            background-color: white;
+            color: black;
+        }
+        #logo{
+            font-size: 25px;
+        }
+    </style>
+
+
 </head>
+
 <body style="color: brown;">
-<nav style="height: 80px;background-color: black; display: flex;justify-content: space-around;" >
-   <ul style="display: flex;justify-content: space-around; column-gap: 30px;" >
-    <li >Shopify</li>
-    <li>Solutions</li>
-    <li>Pricing</li>
-    <li>Resources</li>
-    <li>Enterprise</li>
-    <li>Whats new</li>
-   </ul>
+    <nav class="MyNav row">
+        <ul class="row">
+            <li id="logo"><a href="">Shopify</a></li>
+            <li>Solutions</li>
+            <li>Pricing</li>
+            <li>Resources</li>
+            <li>Enterprise</li>
+            <li>Whats new</li>
+        </ul>
 
-   <ul>
-    <li>Log in</li>
-    <li>Start for free</li>
-   </ul>
-</nav>
+        <ul class="row">
+            <li>Log in</li>
+           <div id="start"> <li >Start for free</li></div>
+        </ul>
+    </nav>
 
-<script src="js/myjavascript.js"></script>
+    <script src="js/myjavascript.js"></script>
 </body>
+
 </html>
