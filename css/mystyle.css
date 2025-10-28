@@ -1,0 +1,10 @@
+.row{display: flex; justify-content: space-around;}
+.column {display: flex; flex-direction: column; justify-content: space-around; row-gap: 120px;}
+.redish{ color: rgb(161, 6, 6);}
+.f-size-250{ font-size: 250px;}
+.f-size-25{ font-size: 25px;}
+.shadow-blue{ box-shadow:inset 0px 0px 12px blue ;}
+.shadow-green { box-shadow: inset 0px 0px 12px green;}
+.orange{
+    color: orange;
+}
